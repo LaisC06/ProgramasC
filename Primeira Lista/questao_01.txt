@@ -1,0 +1,34 @@
+1. Três índios, conduzindo três brancos, precisam atravessar um rio dispondo para tal
+de um barco cuja capacidade é de apenas duas pessoas. Por questões de
+segurança, os índios não querem ficar em minoria, em nenhum momento e em
+nenhuma das margens. Escreva um algoritmo que oriente os índios para realizarem
+a travessia nas condições fixadas. (Cabe observar que, usualmente, este exercício
+é enunciado envolvendo três jesuítas e três canibais. A alteração feita é uma
+modesta contribuição para o resgate da verdadeira história dos índios).
+
+m1[i, i, i, b, b, b]
+m2[]
+
+vai [i, b] m1 [i, i, b, b] m2 []
+fica [b]
+volta [i]  m1 [i, i, b, b] m2 [b]
+
+vai [i, b]  m1 [i, i, b] m2 [b]
+fica [b]
+volta [i]  m1 [i, i ,b ] m2 [b, b]
+
+vai [i, i]  m1 [i, b] m2 [b, b]
+fica[i]
+volta [i, b]  m1 [i, b] m2 [i, b]
+
+vai [i, i]  m1 [b, b] m2 [i, b]
+fica[i]
+volta [i]  m1 [b, b] m2 [i, i, b]
+
+vai [i, b] m1 [b] m2 [i, i, b]
+fica[b]
+volta [i] m1[b] m2 [i, i, b, b]
+
+vai [i, b] m1[] m2[i, i, b, b]
+fica [i, b]
+volta [] m1 [] m2 [i, i, i, b, b, b]

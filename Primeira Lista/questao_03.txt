@@ -1,0 +1,29 @@
+
+3. Imagine que se disponha de três esferas numeradas 1, 2 e 3 iguais na forma, duas
+delas com pesos iguais e diferentes do peso da outra. Escreva um algoritmo que,
+com duas pesagens numa balança de dois pratos, determine a esfera de peso
+diferente e a relação entre seu peso e o peso das esferas de pesos iguais.
+
+
+
+esferas [1, 2, 3]
+
+pesa1 [1, 2] fora [3]
+
+se equilibrar
+    3 tem peso diferentes
+
+    pesa2 [1, 3] fora [2]
+
+    se 3 descer
+        é mais pesado
+    senão
+        é mais leve
+
+senão retira a mais leve  (neste caso a esfera 2)
+    pesa2 [1, 3] fora [2]
+
+    se equilibrar
+        2 é mais leve
+    senão
+        1 é mais pesado
